@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS Sistem Operasi - Kali Linux</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1a1a2e, #16213e);
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #367bf5, #1a1a2e);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .info-box {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            color: #367bf5;
+            border-bottom: 2px solid #367bf5;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .card h3 {
+            color: #1a1a2e;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .link-box {
+            background: #f0f8ff;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            margin: 1rem 0;
+        }
+
+        .link-box a {
+            display: inline-block;
+            background: #367bf5;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 0.5rem;
+        }
+
+        .link-box a:hover {
+            background: #2563d8;
+        }
+
+        .step {
+            background: #f9f9f9;
+            padding: 1rem;
+            margin: 0.8rem 0;
+            border-left: 3px solid #367bf5;
+            border-radius: 5px;
+        }
+
+        .step h4 {
+            color: #367bf5;
+            margin-bottom: 0.5rem;
+        }
+
+        .info {
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+
+        .warning {
+            background: #fff9e6;
+            border-left: 3px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        ul {
+            margin-left: 1.5rem;
+        }
+
+        li {
+            margin: 0.5rem 0;
+        }
+
+        .footer {
+            background: #1a1a2e;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🐉 UJIAN TENGAH SEMESTER</h1>
+        <h2>Sistem Operasi - Kali Linux</h2>
+        <div class="info-box">
+            <p><strong>Nama:</strong> Muchamad Choirus Syafi'</p>
+            <p><strong>NIM:</strong> 102240056</p>
+            <p><strong>Kelas:</strong> IM24B - Informatika</p>
+            <p><strong>Dosen:</strong> Arif Iman Anshori, S.Kom., MMSI</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- SOAL 1 -->
+        <div class="card">
+            <h2>📋 Soal 1: Informasi Kali Linux</h2>
+            
+            <h3>Apa itu Kali Linux?</h3>
+            <p>
+                Kali Linux adalah sistem operasi berbasis Linux yang dirancang khusus untuk <strong>penetration testing</strong> dan <strong>security auditing</strong>. Kali Linux dikembangkan oleh Offensive Security dan menyediakan lebih dari 600 tools untuk keperluan cybersecurity dan ethical hacking.
+            </p>
+
+            <div class="info">
+                <strong>Versi:</strong> Kali Linux 2024.3<br>
+                <strong>Basis:</strong> Debian Linux<br>
+                <strong>Desktop:</strong> Xfce (default), GNOME, KDE<br>
+                <strong>Lisensi:</strong> Open Source & Gratis
+            </div>
+
+            <h3>Sejarah Kali Linux</h3>
+            <p>Kali Linux diluncurkan pada <strong>13 Maret 2013</strong> sebagai penerus BackTrack Linux. Berikut timeline pentingnya:</p>
+            <ul>
+                <li><strong>2006-2012:</strong> Era BackTrack Linux</li>
+                <li><strong>2013:</strong> Peluncuran Kali Linux 1.0</li>
+                <li><strong>2016:</strong> Model Rolling Release (update terus menerus)</li>
+                <li><strong>2020:</strong> Default Non-Root User untuk keamanan</li>
+                <li><strong>2024:</strong> Kali Linux 2024.3 dengan tools terbaru</li>
+            </ul>
+
+            <h3>Fitur Utama</h3>
+            <ul>
+                <li>✅ Lebih dari 600 security tools pre-installed</li>
+                <li>✅ Open source dan gratis selamanya</li>
+                <li>✅ Rolling release (always up-to-date)</li>
+                <li>✅ Multi-platform (PC, VM, Cloud, Mobile)</li>
+                <li>✅ Customizable sesuai kebutuhan</li>
+                <li>✅ Live boot mode (tidak perlu install)</li>
+                <li>✅ Dokumentasi lengkap</li>
+            </ul>
+
+            <h3>Tools Populer di Kali Linux</h3>
+            <ul>
+                <li><strong>Nmap:</strong> Network scanning & mapping</li>
+                <li><strong>Metasploit:</strong> Exploitation framework</li>
+                <li><strong>Wireshark:</strong> Network protocol analyzer</li>
+                <li><strong>Burp Suite:</strong> Web application security testing</li>
+                <li><strong>Aircrack-ng:</strong> Wireless network testing</li>
+                <li><strong>John the Ripper:</strong> Password cracking</li>
+                <li><strong>Sqlmap:</strong> SQL injection testing</li>
+                <li><strong>Hydra:</strong> Network login cracker</li>
+            </ul>
+
+            <h3>Kegunaan Kali Linux</h3>
+            <ul>
+                <li>Penetration Testing & Ethical Hacking</li>
+                <li>Security Auditing</li>
+                <li>Vulnerability Assessment</li>
+                <li>Digital Forensics</li>
+                <li>Network Security Testing</li>
+                <li>Web Application Testing</li>
+                <li>Pembelajaran Cybersecurity</li>
+            </ul>
+
+            <div class="warning">
+                <strong>⚠️ PERINGATAN:</strong> Gunakan Kali Linux hanya untuk tujuan legal seperti pembelajaran dan authorized testing. Penyalahgunaan dapat melanggar hukum!
+            </div>
+        </div>
+
+        <!-- SOAL 2 -->
+        <div class="card">
+            <h2>🔗 Soal 2: Download Kali Linux</h2>
+            
+            <p>Kali Linux dapat diunduh gratis dari situs resminya. Tersedia berbagai versi sesuai kebutuhan.</p>
+
+            <div class="link-box">
+                <h3>Download Kali Linux</h3>
+                <a href="https://www.kali.org/get-kali/" target="_blank">🌐 Halaman Download Resmi</a>
+                <a href="https://www.kali.org/docs/" target="_blank">📚 Dokumentasi</a>
+                <a href="https://www.kali.org/tools/" target="_blank">🛠️ Daftar Tools</a>
+            </div>
+
+            <h3>Pilihan Download</h3>
+            <ul>
+                <li><strong>Installer Image (~4GB):</strong> Untuk instalasi permanen</li>
+                <li><strong>Live Image (~3.5GB):</strong> Untuk mencoba tanpa install</li>
+                <li><strong>Virtual Machine (~4GB):</strong> Untuk VMware/VirtualBox</li>
+                <li><strong>NetInstaller (~500MB):</strong> Download minimal</li>
+            </ul>
+
+            <h3>Desktop Environment</h3>
+            <ul>
+                <li><strong>Xfce:</strong> Ringan & cepat (recommended)</li>
+                <li><strong>GNOME:</strong> Modern & feature-rich</li>
+                <li><strong>KDE:</strong> Highly customizable</li>
+            </ul>
+
+            <div class="info">
+                <strong>💡 Rekomendasi:</strong> Download Installer Image dengan desktop Xfce untuk pemula. Jika ingin belajar tanpa risiko, gunakan Virtual Machine.
+            </div>
+        </div>
+
+        <!-- SOAL 3 -->
+        <div class="card">
+            <h2>⚙️ Soal 3: Cara Install Kali Linux</h2>
+            
+            <h3>Persiapan</h3>
+            <ul>
+                <li>File ISO Kali Linux (dari kali.org)</li>
+                <li>USB Flash Drive minimal 8GB</li>
+                <li>Software Rufus atau Balena Etcher</li>
+                <li>Backup data penting</li>
+            </ul>
+
+            <h3>Spesifikasi Minimum</h3>
+            <ul>
+                <li>Processor: Intel i3 atau AMD equivalent</li>
+                <li>RAM: 2GB (8GB recommended)</li>
+                <li>Storage: 20GB (50GB recommended)</li>
+            </ul>
+
+            <h3>Langkah Instalasi</h3>
+
+            <div class="step">
+                <h4>Step 1: Buat Bootable USB</h4>
+                <ul>
+                    <li>Download dan buka Rufus atau Etcher</li>
+                    <li>Pilih USB flash drive</li>
+                    <li>Pilih file ISO Kali Linux</li>
+                    <li>Klik "Start" atau "Flash"</li>
+                    <li>Tunggu sampai selesai (5-15 menit)</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h4>Step 2: Boot dari USB</h4>
+                <ul>
+                    <li>Restart komputer</li>
+                    <li>Tekan F2/F12/Del saat booting</li>
+                    <li>Masuk ke Boot Menu</li>
+                    <li>Pilih USB sebagai boot device</li>
+                    <li>Save & Exit</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h4>Step 3: Mulai Instalasi</h4>
+                <ul>
+                    <li>Pilih "Graphical Install"</li>
+                    <li>Pilih bahasa: English</li>
+                    <li>Pilih lokasi: Indonesia</li>
+                    <li>Pilih keyboard: American English</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h4>Step 4: Network & Hostname</h4>
+                <ul>
+                    <li>Hostname: kali-choirus (atau bebas)</li>
+                    <li>Domain: kosongkan saja</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h4>Step 5: Buat User Account</h4>
+                <ul>
+                    <li>Full name: Muchamad Choirus Syafi'</li>
+                    <li>Username: choirus</li>
+                    <li>Password: buat password kuat</li>
+                    <li>Konfirmasi password</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h4>Step 6: Partisi Disk</h4>
+                <ul>
+                    <li>Pilih "Guided - use entire disk"</li>
+                    <li>Pilih disk yang akan digunakan</li>
+                    <li>Pilih "All files in one partition"</li>
+                    <li>Konfirmasi "Write changes to disk" = Yes</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h4>Step 7: Tunggu Instalasi</h4>
+                <ul>
+                    <li>Proses copy files (15-25 menit)</li>
+                    <li>Jangan matikan komputer</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h4>Step 8: Package Manager</h4>
+                <ul>
+                    <li>Network mirror: Yes</li>
+                    <li>HTTP proxy: kosongkan</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h4>Step 9: Software Selection</h4>
+                <ul>
+                    <li>Pilih desktop environment (Xfce recommended)</li>
+                    <li>Centang tools yang diinginkan</li>
+                    <li>Atau pilih "default" untuk semua tools</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h4>Step 10: Install GRUB Bootloader</h4>
+                <ul>
+                    <li>Install GRUB: Yes</li>
+                    <li>Pilih disk untuk GRUB</li>
+                </ul>
+            </div>
+
+            <div class="step">
+                <h4>Step 11: Selesai!</h4>
+                <ul>
+                    <li>Klik "Continue" untuk restart</li>
+                    <li>Cabut USB saat diminta</li>
+                    <li>Login dengan username & password</li>
+                    <li>Selamat! Kali Linux sudah terinstall 🎉</li>
+                </ul>
+            </div>
+
+            <h3>Setelah Instalasi</h3>
+            <div class="step">
+                <h4>Update Sistem</h4>
+                <p>Buka Terminal dan jalankan:</p>
+                <ul>
+                    <li><code>sudo apt update</code></li>
+                    <li><code>sudo apt upgrade -y</code></li>
+                    <li><code>sudo apt dist-upgrade -y</code></li>
+                </ul>
+            </div>
+
+            <div class="info">
+                <strong>Tips:</strong> Selalu update sistem secara berkala untuk mendapatkan tools dan security patches terbaru!
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Ujian Tengah Semester - Sistem Operasi</strong></p>
+        <p>Muchamad Choirus Syafi' | NIM: 102240056</p>
+        <p>Informatika IM24B - ITSNU Pekalongan</p>
+        <p style="margin-top: 1rem;">© 2024 #SantriHighTech 🚀</p>
+    </div>
+</body>
+</html>
